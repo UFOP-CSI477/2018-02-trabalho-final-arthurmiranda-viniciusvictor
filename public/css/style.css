@@ -6,6 +6,11 @@
     font-family: Raleway, sans-serif;
 }
 
+.font-koliko {
+    font-family: koliko, serif;
+    src: url("koliko_bold.ttf") format("truetype");
+}
+
 .parallax { 
     /* Set a specific height */
     min-height:100vh;
@@ -27,7 +32,7 @@
     transition: all 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
     will-change: left, width;
     box-shadow: inset -1px 0 10px rgba(0, 0, 0, 0.4);
-    padding-top: 13.2vh;
+    padding-top: 8.7vh;
 }
 
 .main_sidebar:after {
@@ -49,12 +54,17 @@
 }
 
 .main_sidebar ul li a {
-    color:#fff;
+    color:rgb(20, 20, 20);
     display:block;
 }
 
 .main_sidebar ul li:hover {
-    background:#202020;
+    background:#5e5e5e;
+    color:#fff;
+}
+
+.main_sidebar ul li:hover a {
+    color:#fff;
 }
 
 .main_sidebar ul li a:hover {
@@ -66,10 +76,19 @@
     background:#e76c21;
 }
 
+.main_sidebar ul li.active a {
+    color:#fff;
+}
+
 .main {
     float:right;
     display:block;
     width:100%;
-    background:#fff;
     min-height:100vh;
+}
+
+.carousel-item img {
+    width: auto;
+    height: 83.8vh;
+    max-height: 83.8vh;
 }
